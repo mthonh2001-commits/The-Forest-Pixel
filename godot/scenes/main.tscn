@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0q3w0a0c1qv"]
+
+[ext_resource type="PackedScene" uid="uid://b0q3w0a0c1qu" path="res://godot/scenes/world.tscn"]
+[ext_resource type="PackedScene" uid="uid://c5g7xq1p4r1a4" path="res://godot/scenes/ui/hud.tscn"]
+
+[node name="Main" type="Node"]
+
+[node name="World" parent="." instance=ExtResource("uid://b0q3w0a0c1qu")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="HUD" parent="CanvasLayer" instance=ExtResource("uid://c5g7xq1p4r1a4")]

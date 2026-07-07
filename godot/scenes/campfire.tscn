@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0q3w0a0c1qt"]
+
+[ext_resource type="Script" path="res://godot/scripts/campfire.gd"]
+
+[node name="Campfire" type="Node2D"]
+script = ExtResource("Script" path="res://godot/scripts/campfire.gd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = -30.0
+offset_top = -40.0
+offset_right = 30.0
+offset_bottom = -25.0
+min_value = 0.0
+max_value = 100.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = -30.0
+offset_top = -20.0
+offset_right = 30.0
+offset_bottom = -5.0
+text = "Lv1"
+alignment = 1
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = CircleShape2D.new()

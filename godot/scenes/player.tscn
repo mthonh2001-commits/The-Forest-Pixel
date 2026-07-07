@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0q3w0a0c1qs"]
+
+[ext_resource type="Script" path="res://godot/scripts/player_controller.gd"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("Script" path="res://godot/scripts/player_controller.gd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = CapsuleShape2D.new()
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
