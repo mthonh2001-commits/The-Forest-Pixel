@@ -1,0 +1,13 @@
+{
+  "name": "The Forest-Pixel Web Build",
+  "version": "0.1.0",
+  "description": "Build scripts for exporting Godot game to web",
+  "scripts": {
+    "serve": "python -m http.server 8000 --directory web",
+    "build": "godot --headless --export-release HTML5 web/game.html --path godot/",
+    "start": "npm run serve"
+  },
+  "keywords": ["godot", "game", "web", "html5"],
+  "author": "The Forest-Pixel Team",
+  "license": "MIT"
+}
